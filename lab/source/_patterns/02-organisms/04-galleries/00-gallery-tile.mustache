@@ -1,0 +1,21 @@
+<section class="section  section-tile">
+    <header class="section-header">
+        <h1 class="section-title">
+            {{ headline.short }}
+        </h1>
+
+        <h2 class="section-subtitle">
+            {{ headline.medium }}
+        </h2>
+    </header>
+    
+    <div class="grid  grid--center">
+        {{# show-4 }}
+            {{# show-6 }}
+                <div class="grid__item  one-sixth">
+                    {{> molecules-block-tile }}
+                </div>
+            {{/ show-6 }}
+        {{/ show-4 }}
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="section  section--galleryfull">
+    <header class="section__header">
+        <h1 class="section__title  beta">{{ headline.short }}</h1>
+        <h2 class="section__subtitle  gamma">{{ headline.medium }}</h2>
+    </header>
+
+    <div class="grid  grid--full">
+
+        {{# show-6 }}
+            <div class="grid__item  one-third">
+                {{> molecules-block-gallery-full }}
+            </div>
+        {{/ show-6 }}
+
+    </div>
+
+</section>

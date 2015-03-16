@@ -1,0 +1,20 @@
+{{# show-comments }}
+<!-- 
+    IMAGE WITH LIGHTBOX
+    TITLE TRANSPARENT INSIDE IMAGE
+-->
+{{/ show-comments }}
+<div class="block  block--tile-inset-bottom">
+    <a href="{{ url }}" class="block__link  js-lightbox" title="{{ block.title }}">
+        <div class="block__image">
+            <img src="{{ block-image }}" alt="{{ block-title }}" />
+            
+            <div class="block__title">
+                {{ block-title }}
+            </div>
+        </div>
+        
+        
+        
+    </a>
+</div>

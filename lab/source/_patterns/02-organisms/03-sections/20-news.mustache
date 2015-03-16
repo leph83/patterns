@@ -1,0 +1,15 @@
+{{# section-news }}
+    <section class="section  section--{{ section-modifier }}">
+        <div class="section__content">
+            {{> molecules-section-header }}
+
+            <div class="grid  {{ section-grid }}">
+                {{# section-items }}
+                    <div class="grid__item  {{ section-grid-item }}"> 
+                        {{> molecules-block-text }}
+                    </div>
+                {{/ section-items }}
+            </div>
+        </div>
+    </section>
+{{/ section-news }}

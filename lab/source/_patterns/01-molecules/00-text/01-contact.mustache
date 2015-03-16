@@ -1,0 +1,50 @@
+{{# contact }}
+    <div class=""  itemscope  itemtype="http://schema.org/Organization">
+        {{# show-company }}
+            <div class=""  itemprop="name">
+                {{ company }}
+            </div>
+        {{/ show-company }}
+        
+        <div itemprop="address"  itemscope itemtype="http://schema.org/PostalAddress">
+            {{# show-address }}
+                <div class=""  itemprop="streetAddress">
+                    {{ street }} {{ street-nr }}
+                </div>
+            {{/ show-address }}
+
+            {{# show-city }}
+                <div class=""  itemprop="postalCode">
+                    {{ zip }} {{ city }}
+                </div>
+            {{/ show-city }}
+
+
+            {{# show-country }}
+                <div class=""  itemprop="addressLocality">
+                    {{ country }}
+                </div>
+            {{/ show-country }}
+        </div>
+
+        <div class="">
+            {{# show-phone }}
+                <div class=""  itemprop="telephone">
+                    Tel: {{ phone }}
+                </div>
+            {{/ show-phone }}
+
+            {{# show-fax }}
+                <div class=""  itemprop="telephone">
+                    Fax: {{ fax }}
+                </div>
+            {{/ show-fax }}
+
+            {{# show-mail }}
+                <div class=""  itemprop="email">
+                    E-Mail: <a href="mailto:{{ mail }}">{{ mail }}</a>
+                </div>
+            {{/ show-mail }}
+        </div>
+    </div>
+{{/ contact }}

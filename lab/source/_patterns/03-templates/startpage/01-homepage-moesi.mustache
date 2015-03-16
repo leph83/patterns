@@ -1,0 +1,43 @@
+<div class="wrapper">
+    {{> organisms-header }}
+
+    {{# sections }}
+        {{> organisms-section }}
+    {{/ sections }}
+
+    {{# sections-1 }}
+        {{> organisms-section-inset }}
+    {{/ sections-1 }}
+
+    <div class="lc">
+        <div class="grid">
+            <div class="grid__item  two-thirds  iphoneh--one-whole  palm--one-whole">
+                {{# sections-2 }}
+                    {{> organisms-section }}
+                {{/ sections-2 }}
+            </div>
+            
+            <div class="grid__item  one-third  iphoneh--one-whole  palm--one-whole">
+                <section class="section  section--">
+                    <div class="section__content">
+                        <div class="section__header">
+                            <div class="section__title  epsilon">
+                                Öffnungszeiten
+                            </div>
+                        </div>
+                    
+                        {{> molecules-opening }}
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    {{# sections-3 }}
+        {{> organisms-section }}
+    {{/ sections-3 }}
+
+    <div class="push"></div>
+</div>
+
+{{> organisms-footer-store }}

@@ -1,0 +1,179 @@
+{
+    "css" : "labrystheia", 
+    "meta-title" : "Labrystheia",
+    "htmlClass": "pl",
+    "bodyClass": "body  labrystheia",
+    "modifier": "modifier",
+    "more" : "weiterlesen",
+    "img": {
+        "logo": {
+            "src": "../../../../img/labrystheia/logo-labrystheiea.jpg",
+            "alt": "logo"
+        }
+    },
+    "show-phone" : false,
+    "show-mail" : true,
+    "show-fax" : false,
+    "company" : "Labrystheia",
+    "slogan" : "Netzwerk lesbischer Theologinnen und theologisch interessierter Lesben",
+    "contact" : {
+        "street" : "c/o Postfach 1603",
+        "street-nr" : "",
+        "zip" : "53706",
+        "city" : "Siegburg",
+        "country" : "Deutschland",
+        "mail" : "mail@labrystheia.de"
+    },
+
+
+    "sections" : [
+        {
+            "section-tag" : "div",
+            "section-modifier" : "title-subtitle",
+            "show-section-image" : true,
+            "section-image" : "../../../../img/labrystheia/bible.jpg",
+            "show-section-overlay" : true,
+
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            "section-subtitle-tag" : "h2",
+            "section-title" : "Ein Netzwerk für alle Lesben",
+            "show-subtitle" : true,
+            "section-subtitle" : "die in kirchlicher oder theologischer Ausbildung sind oder waren oder sich für lesbisch-feministische Theologie interessieren",
+
+            "show-section-items" : false,
+            "show-section-button" : true
+        },
+
+
+        {
+            "block-modifier" : "feature",
+            "block-grid" : "",
+            "show-block-image" : false,
+            "block-grid-image" : "",
+            "block-grid-content" : "",
+            "show-block-more" : true,
+
+
+
+            "section-modifier" : "features",
+            "section-header-tag" : "div",
+            "section-title-tag" : "h1",
+            "section-subtitle-tag" : "div",
+            "section-title" : "Was wir machen",
+            "show-subtitle" : false,
+
+            "section-grid" : "",
+            "section-grid-item" : "one-quarter",
+            "section-items" : [
+                {
+                    "block-title" : "Wir sind politisch aktiv"
+                },
+                {
+                    "block-title" : "Wir fördert die Bildung und Stärkung der eigenen Identität"
+                },
+                {
+                    "block-title" : "Wir lassen Freundschaften entstehen"
+                },
+                {
+                    "block-title" : "Wir bietet Unterstützung bei Konflikten mit Institutionen"
+                }
+            ],
+
+            "show-section-button" : false
+        },
+
+
+        {
+            "block-modifier" : "rounded",
+            "block-grid" : "grid--middle",
+            "block-grid-image" : "one-third",
+            "block-grid-content" : "two-thirds",
+
+            "section-modifier" : "bgcolor",
+            "section-subtitle": false,
+            "section-title" : "Wer wir sind", 
+            "section-grid" : "",
+            "section-grid-item" : "one-third",
+            "section-items" : [
+                {
+                    "block-image" : "../../../../img/labrystheia/test/martina.jpg",
+                    "block-title" : "Martina Müller",
+                    "block-excerpt" : "Obfrau"
+                },
+                {
+                    "block-image" : "../../../../img/labrystheia/test/nonne.jpg",
+                    "block-title" : "Scarlett Mangelberger",
+                    "block-excerpt" : "Mädchen für alles"
+                },
+                {
+                    "block-image" : "../../../../img/labrystheia/test/nonne2.jpg",
+                    "block-title" : "Lasmiranda Den Sivilia",
+                    "block-excerpt" : "Kassiererin"
+                }
+            ]
+        },
+
+
+        {
+            "block-modifier" : "",
+            "block-grid" : "",
+                "block-grid-image" : "",
+                "block-grid-content" : "",
+            "show-block-image" : true,
+                "block-image" : "http://placehold.it/1980x1280",
+            "show-block-date" : true,
+                "show-block-subtitle" : true,
+            "show-block-more" : true,
+
+
+            "section-modifier" : "",
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            "section-title" : "News",
+            "show-subtitle" : false,
+            "show-section-items" : true,
+            "section-grid" : "",
+            "section-grid-item" : "one-third",
+            "section-items" : [
+                {
+                    "date" : "12.12.2014 - 14.12.2014",
+                    "block-title" : "Lesbentagung in Bad Boll",
+                    "block-subtitle" : "Lesbische Identitäten - Queer gedacht, geliebt, gelebt",
+                    "block-excerpt" : "Lesben verbünden sich im Kampf um politische Anerkennung mit anderen Gruppen in LGBTTIQ*-Netzwerken. Welche Aspekte lesbischer Identität kommen dabei zur Geltung, welche bleiben außen vor? Heißt Lesbe sein, feministisch zu sein? Wie kann lesbische Identität in ihrer Vielfalt politisch wirksam werden und in der Aufklärungs- und Bildungsarbeit thematisiert werden? Mehr Informationen & Anmeldung gibt es hier: ",
+                    "more" : "weitere Informationen"
+                },
+                                {
+                    "date" : "21.03.2014 - 23.03 2014",
+                    "block-title" : "Jubiläumstagung von Labrystheia in Hannover ",
+                    "show-block-subtitle" : false,
+                    "block-excerpt" : "Geliebte Labrsytheen und alle, die es werden wollen, lasst uns feiern: Labrystheia, das Netzwerk für lesbische Theologinnen und theologisch interessierte Lesben, wird 25! Zeit für die Silver Convention!"
+                },
+                {
+                    "show-block-date" : false,
+                    "block-title" : "Buch-Neuerscheinung",
+                    "block-subtitle" : "·Let Our Voices Be Heard! Christian Lesbians in Europe Telling their Stories·",
+                    "block-excerpt" : "Der Sammelband „Let Our Voices Be Heard! Christian Lesbians in Europe Telling their Stories” ist ein Projekt des Europäischen Forums Christlicher Lesben- und Schwulengruppen (ILGA, www.ilga-europe.org). Die englischsprachige Publikation enthält Texte lesbischer Frauen mit christlichem Hintergrund aus 26 europäischen Ländern. Dabei vereint die Herausgeberin Randi O. Solberg die persönlichen Lebenserfahrungen, Gedichte, Gebete, Fotos und Zeichnungen von 95 lesbischen Frauen zu einer eindrucksvollen Anthologie. Viele Labrystheia Frauen haben an diesem Buch mitgearbeitet."
+                }
+            ]
+        }
+    ],
+
+
+
+
+
+    "nav-item" : "navigation",
+    "nav-items" : [
+        {
+            "nav-item" : "Kontakt"
+        },
+        {
+            "nav-item" : "Impressum"
+        },
+        {
+            "nav-item" : "Sitemap"
+        }
+    ]
+
+}

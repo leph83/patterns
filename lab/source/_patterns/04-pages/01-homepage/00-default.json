@@ -1,0 +1,126 @@
+{
+    "meta-title" : "Pattern Lab",
+    "htmlClass": "pl  html  default",
+    "bodyClass": "body",
+    "modifier": "modifier",
+
+    "sections" : [
+        {
+            "section-tag" : "div",
+            "section-modifier" : "title-subtitle",
+            "show-section-image" : true,
+            "section-image" : "../../../../img/testimages/werkzeuge.jpg",
+            "show-section-overlay" : true,
+
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            "section-subtitle-tag" : "h2",
+            "section-title" : "Das ist ein super großer Titel",
+            "show-subtitle" : true,
+            "section-subtitle" : "Das ist ein etwas längerer Untertitel",
+
+            "show-section-items" : false,
+            "show-section-button" : true
+        },
+
+
+        {
+            "block-modifier" : "feature",
+            "block-grid" : "",
+            "show-block-image" : false,
+            "block-grid-image" : "",
+            "block-grid-content" : "",
+            "show-block-more" : true,
+
+
+
+            "section-modifier" : "features",
+            "section-header-tag" : "div",
+            "section-title-tag" : "h1",
+            "section-subtitle-tag" : "div",
+            "section-title" : "Features",
+            "show-subtitle" : false,
+
+            "section-grid" : "",
+            "section-grid-item" : "one-third",
+            "section-items" : [
+                {},
+                {},
+                {}
+            ],
+
+            "show-section-button" : false
+        },
+
+
+        {
+            "block-modifier" : "team",
+            "block-grid" : "grid--middle",
+            "block-grid-image" : "one-third",
+            "block-grid-content" : "two-thirds",
+            "block-image" : "http://placehold.it/400x400",
+            "block-title" : "Phuc Le",
+            "block-excerpt" : "Web Developer",
+
+            "section-modifier" : "bgcolor",
+            "section-subtitle": false,
+            "section-title" : "Team", 
+            "section-grid" : "",
+            "section-grid-item" : "one-quarter",
+            "section-items" : [
+                {},
+                {},
+                {},
+                {}
+            ]
+        },
+
+
+        {
+            "block-modifier" : "news",
+            "block-grid" : "",
+            "block-grid-image" : "one-third",
+            "block-grid-content" : "two-thirds",
+            "block-image" : "http://placehold.it/400x400",
+            "show-block-more" : true,
+
+
+            "section-modifier" : "",
+
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            
+            "section-title" : "News",
+            "show-subtitle" : false,
+
+            "show-section-items" : true,
+            "section-grid" : "",
+            "section-grid-item" : "",
+            "section-items" : [
+                {},
+                {}
+            ]
+        },
+
+
+
+        {
+            "section-modifier" : "bgfixed",
+            "show-section-image" : true,
+            "section-image" : "../../../../img/testimages/werkzeuge.jpg",
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            
+            "section-title" : "News",
+            "show-subtitle" : false,
+
+            "show-section-items" : true,
+            "section-grid" : "",
+            "section-grid-item" : "",
+            "section-items" : [
+                {},
+                {}
+            ]
+        }
+    ]
+}

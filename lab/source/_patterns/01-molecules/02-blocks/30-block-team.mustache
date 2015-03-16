@@ -1,0 +1,23 @@
+<article class="block  block--team">
+    <a href="{{ url }}" class="block__link" title="{{ headline.short }}">
+
+        <div class="grid  grid--narrow grid--middle">
+            <div class="grid__item  one-third">
+                <div class="block__image">
+                    {{> atoms-avatar }}
+                </div>
+            </div>
+
+            <div class="grid__item  two-thirds">
+                <div class="block__title">
+                    {{ name.full }}
+                </div>
+
+                <div class="block__excerpt">
+                    <p>{{ headline.short }}</p>
+                </div>
+            </div>
+        </div>
+
+    </a>
+</article>

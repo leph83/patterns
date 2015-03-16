@@ -1,0 +1,102 @@
+{
+    "title" : "Pattern Lab",
+    "htmlClass": "pl",
+    "bodyClass": "body  avantgarde",
+    "modifier": "modifier",
+    "img": {
+        "logo": {
+            "src": "../../../../img/avantgarde/logo.png",
+            "alt": "Avantgarde"
+        },
+        "landscape-4x3": {
+            "src": "../../images/fpo_4x3.png",
+            "alt": "4x3 Image"
+        },
+        "landscape-16x9": {
+            "src": "../../images/fpo_16x9.png",
+            "alt": "16x9 Image"
+        },
+        "square": {
+            "src": "../../images/fpo_square.png",
+            "alt": "Square Thumbnail"
+        },
+        "avatar" : {
+            "src" : "../../images/fpo_avatar.png",
+            "alt" : "Person Name"
+        },
+        "rectangle": {
+            "src": "http://placeimg.com/400/300/tech",
+            "alt": "Rectangle"
+        },
+        "drinks": {
+            "src": "../../../../img/testimages/drinks/drink1.jpg",
+            "alt": "Rectangle"
+        },
+        "headerimage": {
+            "src": "../../../../img/testimages/big-bear.jpg"
+        }
+    },
+    "article" : {
+        "img": {
+            "landscape-16x9": {
+                "src": "../../../../img/avantgarde/big-bear.jpg"
+            }
+        },
+        "headline" : {
+            "short" : "Build a grrreat Website",
+            "medium" : "Unlimited sliders, video headers, microformats, rich snippets, responsive design and more. AvantGarde gives you the tools to create a beautiful, engaging web presence"
+        },
+        "more" : "purchase now"
+    },
+    "section-features" : {
+        "headline" : {
+            "short" : "Overview",
+            "medium" : "AVANTGARDE LETS YOU BUILD AMAZING WEBSITES QUICKLY AND EASILY."
+        }
+    },
+    "features" : [
+        {
+            "img" : false,
+            "headline" : {
+                "short" : "Unlimited Sliders."
+            },
+            "excerpt" : {
+                "medium" : "Add a slider header to any page, with unlimited images, all with our easy to use shortcode. Our slider also uses categories, this allows you to add your images once, but use them everywhere. Does it get any easier than this?"
+            }
+        },
+        {
+            "img" : false,
+            "headline" : {
+                "short" : "Video Headers."
+            },
+            "excerpt" : {
+               "medium" : "Sometimes images are not enough. Sometimes a video is needed. No problem. Add a video header to any page with our easy-to-use video shortcode. Pretty nifty huh?"
+            }
+        },
+        {
+            "img" : false,
+            "headline" : {
+                "short" : "Sell Online."
+            },
+            "excerpt" : {
+               "medium" : "AvantGarde is WooCommerce compatible, allowing you to sell your products & services online. Simply install the WooCommerce plugin, add your products and away you go. It’s that simple."
+            }
+        },
+        {
+            "img" : false,
+            "headline" : {
+                "short" : "SEO Ready."
+            },
+            "excerpt" : {
+               "medium" : "CSS minification, HTML compression, microformats, rich snippets and more. AvantGarde is built from the ground up with speed, ease-of-use and search engines in mind. Themes shipped the right way."
+           }
+        }
+    ],
+    "section-team" : [
+        {
+            "headline" : {
+                "short" : "Team"
+            }
+        }
+    ]
+}

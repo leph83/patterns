@@ -1,0 +1,23 @@
+<article class="block  block--feature">
+    <a href="{{ url }}" class="block__link" title="{{ headline.short }}">
+
+        {{# feature-image }}
+        <div class="block__image">
+            {{> atoms-landscape-4x3 }}
+        </div>
+        {{/ feature-image }}
+
+        <div class="block__title">
+            {{ headline.short }}
+        </div>
+
+        <div class="block__excerpt">
+            <p>{{ excerpt.medium }}</p>
+        </div>
+
+        <div class="block__more">
+            {{ more }}
+        </div>
+
+    </a>
+</article>

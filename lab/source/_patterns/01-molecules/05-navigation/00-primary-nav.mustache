@@ -1,0 +1,41 @@
+<nav class="menu  menu--{{ modifier }}">
+    <ul class="menu__layout  menu__layout--inline  menu__layout--dropdown">
+        <li class="menu__layout-unit">
+            <a class="menu__item" href="{{ url }}">Home</a>
+        </li>
+
+        <li class="menu__layout-unit">
+            <a class="menu__item  menu__item--current" href="{{ url }}">Übersicht</a>
+
+            <ul class="menu__layout  menu__layout--sub">
+                <li class="menu__layout-unit  menu__layout-unit--sub">
+                    <a class="menu__item  menu__item--sub" href="{{ url }}">Detail</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu__layout-unit">
+            <a class="menu__item  menu__item--current" href="{{ url }}">News</a>
+
+            <ul class="menu__layout  menu__layout--sub">
+                <li class="menu__layout-unit  menu__layout-unit--sub">
+                    <a class="menu__item  menu__item--sub" href="{{ url }}">News Detail</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu__layout-unit">
+            <a class="menu__item  menu__item--current" href="{{ url }}">Events</a>
+
+            <ul class="menu__layout  menu__layout--sub">
+                <li class="menu__layout-unit  menu__layout-unit--sub">
+                    <a class="menu__item  menu__item--sub" href="{{ url }}">Event Detail</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu__layout-unit">
+            <a class="menu__item" href="{{ url }}">Kontakt</a>
+        </li>
+    </ul>
+</nav>
