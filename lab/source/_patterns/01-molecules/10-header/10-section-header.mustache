@@ -1,0 +1,28 @@
+{{# show-comments }}
+    <!-- 
+    DEFAULT OUTPUT
+    <div class="section__header">
+        <div class="section__title">
+        </div>
+
+        <div class="section__subtitle">
+        </div>
+    </div>
+    -->
+{{/ show-comments }}
+
+{{# show-section-header }}
+    <{{ section-header-tag }} class="section__header">
+
+        <{{ section-title-tag }} class="section__title">
+            {{{ section-title }}}
+        </{{ section-title-tag}}>
+
+        {{# show-subtitle }}
+            <{{ section-subtitle-tag }} class="section__subtitle">
+                {{{ section-subtitle }}}
+            </{{ section-subtitle-tag }}>
+        {{/ show-subtitle }}
+
+    </{{ section-header-tag }}>
+{{/ show-section-header }}

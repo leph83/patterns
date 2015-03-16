@@ -1,0 +1,28 @@
+{{# article }}
+    <div class="article  article--main  cover  valign-wrapper" style="background-image: url({{ articleimg }});">
+        <div class="vmiddle">
+
+            <!-- OVERLAY -->
+            <div class="article__overlay  fullheight"> </div>
+
+            <!-- CONTENT -->
+            <div class="grid">
+                <div class="grid__item  two-thirds">
+                    <div class="article-content">
+                        <!-- HEADER -->
+                        {{> molecules-article-header }}
+
+                        <!-- ARTICLE LINK -->
+                        {{# show-article-more }}
+                        <a class="article__link" href="{{ url }}" title="{{ more }}">
+                            {{ more }}
+                        </a>
+                        {{/ show-article-more }}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+{{/ article }}

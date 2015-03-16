@@ -1,0 +1,43 @@
+<{{ block-tag }} class="block  block--{{ block-modifier }}">
+    <a href="{{# show-lightbox }}{{ block-image }}{{/ show-lightbox}}" class="block__link {{# show-lightbox }}js-lightbox{{/ show-lightbox}}" title="{{ block-title }}">
+        <div class="grid  {{ block-grid }}">
+            {{# show-block-image }}
+                <div class="grid__item  {{ block-grid-image }}">
+                    <div class="block__image">
+                        <img src="{{ block-image }}" alt="{{ block-title }}" />
+                    </div>
+                </div>
+            {{/ show-block-image }}
+
+            <div class="grid__item  {{ block-grid-content }}">
+                {{# show-block-header }}
+                    <{{ block-tag }} class="block__header">
+                {{/ show-block-header }}
+
+                {{# show-block-title }}
+                    <{{ block-tag }} class="block__title">
+                        {{ block-title }}
+                    </{{ block-tag }}>
+                {{/ show-block-title }}
+
+                {{# show-block-header }}
+                    </{{ block-tag}}>
+                {{/ show-block-header }}
+
+                {{# show-block-excerpt }}
+                    <div class="block__excerpt">
+                        <p>
+                            {{ block-excerpt }}
+                        </p>
+                    </div>
+                {{/ show-block-excerpt }}
+
+                {{# show-block-more }}
+                    <div class="block__more">
+                        {{ block-more }}
+                    </div>
+                {{/ show-block-more }}
+            </div>
+        </div>
+    </a>
+</{{ block-tag }}>

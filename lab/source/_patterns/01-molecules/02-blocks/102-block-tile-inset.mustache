@@ -1,0 +1,17 @@
+{{# show-comments }}
+<!-- 
+    IMAGE WITH LIGHTBOX LINK 
+    SHOWS TITLE ON HOVER
+-->
+{{/ show-comments }}
+<div class="block  block--tile-inset">
+    <a href="{{ url }}" class="block__link  js-lightbox" title="{{ block.title }}" style="background-image: url({{ block-image }});">
+        <div class="block__overlay">
+            <!-- -->
+        </div>
+
+        <div class="block__title">
+            {{ block-title }}
+        </div>
+    </a>
+</div>

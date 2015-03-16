@@ -1,0 +1,17 @@
+{{# show-comments }}
+<!-- 
+    IMAGE WITH LIGHTBOX LINK 
+    SHOWS TITLE ON HOVER
+-->
+{{/ show-comments }}
+<div class="block  block--tile-title">
+    <a href="{{ url }}" class="block__link  js-lightbox" title="{{ block-title }}">
+        <div class="block__image">
+            {{> atoms-square }}
+        </div>
+
+        <div class="block__title">
+            {{ block-title }}
+        </div>
+    </a>
+</div>

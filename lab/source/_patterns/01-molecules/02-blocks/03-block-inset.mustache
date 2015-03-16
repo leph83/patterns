@@ -1,0 +1,69 @@
+<{{ block-tag }} class="block  block--{{ block-modifier }}  {{# show-block-image }}cover{{/ show-block-image }}"  {{# show-block-image }}style="background-image: url({{ block-image }});"{{/ show-block-image }}>
+    <!-- BLOCK OVERLAY -->
+    {{# show-block-overlay }}
+        <div class="block__overlay"></div>
+    {{/ show-block-overlay }}
+    
+    <!-- BLOCK LINK -->
+    {{# show-block-link }}
+    <a href="{{# show-lightbox }}{{ block-image }}{{/ show-lightbox}}{{^ show-lightbox }}{{ url }}{{/ show-lightbox}}" class="block__link {{# show-lightbox }}js-lightbox{{/ show-lightbox}}" title="{{ block-title }}">
+    {{/ show-block-link }}
+
+        <div class="grid  {{ block-grid }}">
+            <!-- CONTENT -->
+            <div class="grid__item  {{ block-grid-content }}">
+                {{# show-block-date }}
+                    <div class="block__date">
+                        <date>{{ date }}</date>
+                    </div>
+                {{/ show-block-date }}
+                
+                <!-- BLOCK HEADER -->
+                {{# show-block-header }}
+                    <{{ block-header-tag }} class="block__header">
+                {{/ show-block-header }}
+
+                    <!-- BLOCK TITLE -->
+                    <{{ block-title-tag }} class="block__title">
+                        {{{ block-title }}}
+                    </{{ block-title-tag }}>
+
+                    <!-- BLOCK SUBTITLE -->
+                    {{# show-block-subtitle }}
+                        <{{ block-subtitle-tag }} class="block__subtitle">
+                            {{{ block-subtitle }}}
+                        </{{ block-subtitle-tag }}>
+                    {{/ show-block-subtitle }}
+
+                {{# show-block-header }}
+                    </{{ block-header-tag}}>
+                {{/ show-block-header }}
+                <!-- END BLOCK HEADER -->
+
+                <!-- BLOCK EXCERPT -->
+                {{# show-block-excerpt }}
+                    <div class="block__excerpt">
+                        <p>
+                            {{{ block-excerpt }}}
+                        </p>
+                    </div>
+                {{/ show-block-excerpt }}
+                <!-- END BLOCK EXCERPT -->
+
+                <!-- BLOCK MORE -->
+                {{# show-block-link }}
+                {{# show-block-more }}
+                    <div class="block__more">
+                        {{{ more }}}
+                    </div>
+                {{/ show-block-more }}
+                {{/ show-block-link }}
+                <!-- END BLOCK MORE -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+
+    {{# show-block-link }}
+    </a>
+    {{/ show-block-link }}
+</{{ block-tag }}>

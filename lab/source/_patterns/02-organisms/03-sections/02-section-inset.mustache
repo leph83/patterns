@@ -1,0 +1,51 @@
+{{# show-comments }}
+    <!-- 
+    DEFAULT OUTPUT
+    <div class="section  section--modifier  cover" background-image: url();>
+        MOLECULES-SECTION-HEADER
+        
+        <div class="section__overlay"></div>
+        
+        <div class="grid">
+            <div class="grid__item">
+                MOLECULES-BLOCK-TEXT
+            </div>
+        </div>
+        
+        <div class="section__button__container">
+            <a class="section__button" href="#"  title="section-title">more</a>
+        </div>
+    </div>
+    -->
+{{/ show-comments }}
+<{{ section-tag }} 
+    class="section  section--{{ section-modifier }}  {{# show-section-image }}cover{{/ show-section-image }}"  
+    {{# show-section-image }}style="background-image:url({{ section-image }});"{{/ show-section-image }}
+    >
+
+    {{# show-section-overlay }}
+        <div class="section__overlay  stretch"></div>
+    {{/ show-section-overlay }}
+
+    <div class="section__content">
+        {{> molecules-section-header }}
+
+        {{# show-section-items }}
+        <div class="grid  {{ section-grid }}">
+            {{# section-items }}
+                <div class="grid__item  {{ section-grid-item }}"> 
+                    {{> molecules-block-inset }}
+                </div>
+            {{/ section-items }}
+        </div>
+        {{/ show-section-items }}
+
+        {{# show-section-button }}
+            <div class="section__button__container">
+                <a class="section__button" href="" title="{{ section-title }}">{{ more }}</a>
+            </div>
+        {{/ show-section-button }}
+    
+    </div>
+
+</{{ section-tag }}>

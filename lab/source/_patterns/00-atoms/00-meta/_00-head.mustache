@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js  {{ htmlClass }}"> <!--<![endif]-->
+    <head>
+        <title>{{ meta-title }}</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,700,400' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="../../../../css/{{ css }}.css?{{ cacheBuster }}" media="all" />
+
+        <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) --> 
+        {% pattern-lab-head %}
+        <!-- End Pattern Lab -->
+
+        <script src="../../../../js/vendor/modernizr.min.js"></script>
+
+        <script src="//localhost:30001/livereload.js"></script>
+
+    </head>
+    <body class="{{ bodyClass }}">

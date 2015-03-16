@@ -1,0 +1,159 @@
+{
+    "css" : "moesi",
+    "meta-title" : "Pattern Lab",
+    "htmlClass": "pl",
+    "bodyClass": "body  moesi",
+    "modifier": "modifier",
+    "more" : "weiterlesen",
+    "img": {
+        "logo": {
+            "src": "../../../../img/moesi/logo-moser.png",
+            "alt": "logo"
+        }
+    },
+    "show-phone" : true,
+    "show-mail" : false,
+    "show-fax" : false,
+    "company" : "Mösi's Flohmarkthüsli",
+    "contact" : {
+        "street" : "Gufelweg",
+        "street-nr" : "3",
+        "zip" : "CH-9476",
+        "city" : "Plattis-Weite",
+        "country" : "Schweiz",
+        "phone" : "079 449 86 11",
+        "mail" : ""
+    },
+
+    
+    "nav-item" : "navigation",
+    "nav-items" : [
+        {
+            "nav-item" : "AGB"
+        },
+        {
+            "nav-item" : "Impressum"
+        },
+        {
+            "nav-item" : "Kontakt"
+        }
+    ],
+    
+    
+    "block-more" : "weiter",
+    
+    
+    
+    "section-tag" : "section",
+    "section-modifier" : "",
+    "show-section-image" : false,
+    "section-image" : "../../../../img/testimages/werkzeuge.jpg",
+    "show-section-overlay" : false, 
+
+    "show-section-header" : true,
+    "section-header-tag" : "div",
+    "section-title-tag" : "h1",
+    "section-subtitle-tag" : "div",
+    "section-title" : "Section Title",
+    "show-subtitle" : true,
+    "section-subtitle" : "Section Subtitle",
+
+    "show-section-items" : true,
+    "section-grid" : "",
+    "section-grid-item" : "",
+    "section-items" : [
+        {}
+    ],
+
+    "show-section-button" : false,
+    
+    "sections" : false,
+    
+    "sections-1" : [
+        {
+            "block-modifier" : "title-subtitle",
+            "show-block-overlay" : true,
+            "show-block-subtitle" : true,
+            "show-block-excerpt" : false,
+            "show-block-more" : true,
+            
+            "section-modifier" : "slides  js-slider",
+            "show-section-image" : false,
+            "show-section-header" : false,
+            "show-section-items" : [
+                {
+                    "block-image" : "../../../../img/moesi/laden.jpg",
+                    "block-title" : "Flohmarkthüsli",
+                    "block-subtitle" : "Kommen Sie bei uns vorbei und stöbern Sie in unserer Sammlung von Antiquitäten aller Art"
+                },
+                {
+                    "block-image" : "../../../../img/moesi/dog.jpg",
+                    "block-title" : "Husse Hundeprodukte",
+                    "block-subtitle" : "Alles was Ihr Hund braucht können Sie hier bestellen."
+                },
+                {
+                    "block-image" : "../../../../img/moesi/aquapresen.jpg", 
+                    "block-title" : "Aquapresen Kosmetik",
+                    "block-subtitle" : "Bestellen Sie Aquapresen Kosmetik reine Natur bei Mösis Flohmarkt"
+                }
+            ]
+        }
+    ],
+    
+    "sections-2" : [
+        {
+            "block-modifier" : "",
+            "block-grid" : "grid--middle",
+            "show-block-more" : true,
+            
+            "section-tag" : "div",
+            "section-modifier" : "",
+
+            "section-header-tag" : "div",
+            "section-title-tag" : "div",
+            "section-subtitle-tag" : "div",
+            "section-title" : "Beliebte Produkte",
+            "show-subtitle" : false,
+
+            "section-grid" : "",
+            "section-grid-item" : "",
+            "section-items" : [
+                {
+                    "block-image" : "../../../../img/moesi/husse.gif",
+                    "block-title" : "Husse Hundeprodukte",
+                    "block-excerpt" : ""
+                },
+                {
+                    "block-image" : "../../../../img/moesi/aquapresen.png",
+                    "block-title" : "Aquapresen Kosmetik",
+                    "block-excerpt" : "Bestellen Sie Aquapresen Kosmetik reine Natur bei Mösis Flohmarkt"
+                }
+            ],
+
+            "show-section-button" : false
+        }
+    ],
+    
+    
+    "sections-3" : [
+        {
+            "section-tag" : "div",
+            "section-modifier" : "caption-title",
+            "show-section-image" : true,
+            "section-image" : "../../../../img/moesi/shop.jpg",
+            "show-section-overlay" : true,
+            
+            "section-header-tag" : "header",
+            "section-title-tag" : "h1",
+            "section-subtitle-tag" : "h2",
+            "section-title" : "Mösis Shop",
+            "show-subtitle" : true,
+            "section-subtitle" : "Bestellen Sie einfach online und zahlen mit PayPal oder Kreditkarte. Und das beste: Der Versand ist gratis!",
+
+            "show-section-items" : false,
+            "show-section-button" : true,
+            
+            "more" : "zum Shop"
+        }
+    ]
+}

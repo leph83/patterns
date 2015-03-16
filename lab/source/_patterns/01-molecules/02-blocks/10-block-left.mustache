@@ -1,0 +1,53 @@
+<div class="block  block--{{ block-modifier }}">
+    <a href="{{ url }}" class="block__link" title="{{ block-title }}">
+        <div class="grid  {{ block-grid }}">
+            <div class="grid__item  {{ block-grid-image }}">
+                <div class="block__image">
+                    <img src="{{ block-image }}" alt="{{ block-title }}" />
+                </div>
+            </div>
+
+            <div class="grid__item  {{ block-grid-content }}">
+                {{# show-block-date }}
+                    <div class="block__date">
+                        <date>{{ date.short }}</date>
+                    </div>
+                {{/ show-block-date }}
+
+                {{# show-block-header }}
+                    <header class="block__header">
+                {{/ show-block-header }}
+
+                    {{# show-block-title }}
+                        <{{ block-tag }} class="block__title">
+                            {{ block-title }}
+                        </{{ block-tag }}>
+                    {{/ show-block-title }}
+
+                    {{# show-block-subtitle }}
+                        <{{ block-tag }} class="block__subtitle">
+                            {{ block-subtitle }}
+                        </{{ block-tag }}>
+                    {{/ show-block-subtitle }}
+
+                {{# show-block-header }}
+                    </header>
+                {{/ show-block-header }}
+
+                {{# show-block-excerpt }}
+                    <div class="block__excerpt">
+                        <p>
+                            {{ block-excerpt }}
+                        </p>
+                    </div>
+                {{/ show-block-excerpt }}
+
+                {{# show-block-more }}
+                    <div class="block__more">
+                        {{ block-more }}
+                    </div>
+                {{/ show-block-more }}
+            </div>
+        </div>
+    </a>
+</div>
