@@ -12,17 +12,21 @@
 {{/ show-comments }}
 
 {{# show-section-header }}
-    <{{ section-header-tag }} class="section__header">
+    <div class="grid  {{ section-title-grid }}">
+        <div class="grid__item  {{ section-title-grid-item  }}">
+            <{{ section-header-tag }} class="section__header">
 
-        <{{ section-title-tag }} class="section__title">
-            {{{ section-title }}}
-        </{{ section-title-tag}}>
+                <{{ section-title-tag }} class="section__title">
+                    {{{ section-title }}}
+                </{{ section-title-tag}}>
 
-        {{# show-subtitle }}
-            <{{ section-subtitle-tag }} class="section__subtitle">
-                {{{ section-subtitle }}}
-            </{{ section-subtitle-tag }}>
-        {{/ show-subtitle }}
+                {{# show-subtitle }}
+                    <{{ section-subtitle-tag }} class="section__subtitle">
+                        {{{ section-subtitle }}}
+                    </{{ section-subtitle-tag }}>
+                {{/ show-subtitle }}
 
-    </{{ section-header-tag }}>
+            </{{ section-header-tag }}>
+        </div>
+    </div>
 {{/ show-section-header }}

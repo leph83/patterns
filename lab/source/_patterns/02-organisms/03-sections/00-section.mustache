@@ -28,21 +28,17 @@
     {{/ show-section-overlay }}
 
     <div class="section__content">
-        
-        <div class="grid  {{ section-title-grid }}">
-            <div class="grid__item  {{ section-title-grid-item  }}">
-                {{> molecules-section-header }}
-            </div>
-        </div>
+
+        {{> molecules-section-header }}
 
         {{# show-section-items }}
-        <div class="grid  {{ section-grid }}">
-            {{# section-items }}
-                <div class="grid__item  {{ section-grid-item }}"> 
-                    {{> molecules-block-text }}
-                </div>
-            {{/ section-items }}
-        </div>
+            <div class="grid  {{ section-grid }}">
+                {{# section-items }}
+                    <div class="grid__item  {{ section-grid-item }}"> 
+                        {{> molecules-block-text }}
+                    </div>
+                {{/ section-items }}
+            </div>
         {{/ show-section-items }}
 
         {{# show-section-button }}
@@ -50,7 +46,7 @@
                 <a class="section__button" href="" title="{{ section-title }}">{{ more }}</a>
             </div>
         {{/ show-section-button }}
-    
+
     </div>
 
 </{{ section-tag }}>
