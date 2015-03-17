@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+// THEME COLORS
+$black: #1c1d21;
+$white: #ffffff;
+
+$red: #a62021;
+
+/*------------------------------------*\
+    $COLOR USAGE
+\*------------------------------------*/
+$color-1: $black;
+$color-2: $white;
+$color-3: $red;
+
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+$font : "Open Sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif !default;
+$font-secondary : Georgia, Times, "Times New Roman", serif !default;
+
+/*------------------------------------*\
+    FONT SIZES
+\*------------------------------------*/
+@mixin font-size-1 {
+    @include font-size(83);
+    line-height: 1.2;
+}
+
+@mixin font-size-2 {
+    @include font-size(67);
+    line-height: 1.2;
+}
+
+@mixin font-size-3 {
+    @include font-size(50);
+    line-height: 1.2;
+}
+
+@mixin font-size-4 {
+    @include font-size(37);
+    line-height: 1.2;
+}
+
+@mixin font-size-5 {
+    @include font-size(28);
+    line-height: 1.2;
+}
+
+@mixin font-size-6 {
+    @include font-size(21);
+    line-height: 1.2;
+}
+
+@mixin font-size-base {
+    @include font-size(16);
+    line-height: 1.2;
+}
+
+@mixin font-size-d1 {
+    @include font-size(12);
+    line-height: 1.2;
+}
+
+
+@mixin font-size-d2 {
+    @include font-size(9);
+    line-height: 1.2;
+}
+
+/*------------------------------------*\
+    LAYOUT
+\*------------------------------------*/
+$max-width: 1440px;

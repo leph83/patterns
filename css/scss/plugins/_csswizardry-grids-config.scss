@@ -1,0 +1,18 @@
+$gutter: 30px;
+
+$breakpoints: (
+    'palm' '(max-width: 480px)',
+    'iphoneh' '(min-width: 481px) and (max-width: 767px)',
+    'lap' '(min-width: 481px) and (max-width: 1023px)',
+    'ipadv' '(min-width: 768px) and (max-width: 1023px)',
+    'portable' '(max-width: 1023px)',
+    'ipadh' '(min-width: 1024px) and (max-width: 1280px)',
+    'desk' '(min-width: 1024px)',
+    'wide' '(min-width: 1281px)'
+);
+
+$breakpoint-has-widths: ('palm', 'iphoneh', 'lap', 'ipadv', 'portable', 'ipadh', 'desk', 'wide');
+$breakpoint-has-push:   ('palm', 'iphoneh', 'lap', 'ipadv', 'portable', 'ipadh', 'desk', 'wide');
+$breakpoint-has-pull:   ('palm', 'iphoneh', 'lap', 'ipadv', 'portable', 'ipadh', 'desk', 'wide');
+
+$use-markup-fix:        false;

@@ -1,0 +1,111 @@
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+/* Layout Container */
+.lc {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 $pad-double;
+}
+
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    $STICKY FOOTER
+\*------------------------------------*/
+@include sticky-footer(54px, ".wrapper", ".push", ".sticky-footer");
+
+/*------------------------------------*\
+    $VERTICAL ALIGN CENTER
+\*------------------------------------*/
+.display-table{
+    display:table;
+    table-layout: fixed; //wegen Firefox Responsive Image verhalten
+    width:100%;
+    height:100%;
+   
+    .display-table-cell{
+        display: table-cell;
+        position:relative;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+     }
+    
+     .valigh-fix{
+        display: none;
+        width: 1px;
+        margin-left: -1px;
+     }
+}
+
+.lt-ie8{
+     .valigh-fix, .valign-center{
+          @include inline-block(middle);
+     }
+  
+     .valign-center{
+          width: 100%;
+     }
+   
+     .valigh-fix{
+          height: 100%;
+     }
+}
+
+/*------------------------------------*\
+    $VERTICAL ALIGN CENTER NEW
+\*------------------------------------*/
+.vmiddle-wrapper {
+    font-size: 0;
+}
+
+.vmiddle-before {
+    content: "";
+    @include inline-block;
+    width: 0;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+    padding: 0;
+}
+
+.vmiddle-wrapper:before {
+    @extend .vmiddle-before;
+}
+
+.vmiddle {
+    @include inline-block;
+    @extend .body;
+}
+
+/*------------------------------------*\
+    FIXED SIDEBAR
+\*------------------------------------*/
+
+.fs {
+	height: 100%;
+}
+
+.fs-content {
+	height: 100%;
+	margin-left: 300px;
+	max-width: 768px;
+}
+
+.fs-sidebar {
+	position: fixed;
+	width: 300px;
+	height: 100%;
+}
+
+.content {
+	background: green;
+}

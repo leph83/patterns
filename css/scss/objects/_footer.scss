@@ -1,0 +1,75 @@
+/* ==========================================================================
+  FOOTER
+   ========================================================================== */
+.footer {
+    background: $color-1;
+    padding: $pad 0;
+    
+    &, a {
+        color: $color-2;
+    }
+}
+
+.footer__title {
+    margin-bottom: $space;
+    font-weight: bold;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-top: $pad;
+}
+
+/* FOOTER QUARTER
+   ========================================================================== */
+
+
+/* FOOTER THIRD
+   ========================================================================== */
+.footer--third {
+    .footer__content {
+        @extend .lc; 
+    }
+}
+
+
+/* 
+   ========================================================================== */
+.nav-footer {
+    margin: (-$pad) (-$pad) $space;
+
+    li {
+        border-bottom: 1px solid $gray-dark;
+
+        @media all and (min-width: $bp-med) {
+            border: 0;
+            float: left;
+        }
+    }
+
+    a {
+        display: block;
+        padding: $pad;
+    }
+}
+
+.copyright {
+    @media all and (min-width: $bp-med) {
+        float: right;
+    }
+}
+
+ 
+
+
+/*------------------------------------*\
+    LABRYSTHEIA
+\*------------------------------------*/
+.footer--labrystheia{
+    padding: $pad-double 0;
+    color: $color-8;
+
+    .title{
+        color: $color-6;
+    }
+}

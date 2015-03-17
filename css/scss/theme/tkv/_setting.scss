@@ -1,0 +1,89 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+// THEME COLORS
+
+$black: #1c1d21;
+$green: #88ab75;
+$orange: #cd5334;
+$red: #522a27;
+$pink: #efb0a1;
+$light-green: #d5e1a3;
+$white: #ffffff;
+$gray : #61686B;
+$gray-middle : #ddd;
+
+
+/*------------------------------------*\
+    $COLOR USAGE
+\*------------------------------------*/
+$color-1: $black;
+$color-2: $white;
+$color-3: $green;
+$color-4: $orange;
+$color-5: $red;
+$color-6: $pink;
+$color-7: $light-green;
+$color-8: $gray;
+$color-9: $gray-middle;
+
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+$font : "Open Sans", "HelveticaNeue", "Helvetica", "Arial", sans-serif !default;
+$font-secondary : Georgia, Times, "Times New Roman", serif !default;
+
+/*------------------------------------*\
+    FONT SIZES
+\*------------------------------------*/
+@mixin font-size-1 {
+    @include font-size(83);
+    line-height: 1.2;
+}
+
+@mixin font-size-2 {
+    @include font-size(67);
+    line-height: 1.2;
+}
+
+@mixin font-size-3 {
+    @include font-size(50);
+    line-height: 1.2;
+}
+
+@mixin font-size-4 {
+    @include font-size(37);
+    line-height: 1.2;
+}
+
+@mixin font-size-5 {
+    @include font-size(28);
+    line-height: 1.2;
+}
+
+@mixin font-size-6 {
+    @include font-size(21);
+    line-height: 1.2;
+}
+
+@mixin font-size-base {
+    @include font-size(16);
+    line-height: 1.2;
+}
+
+@mixin font-size-d1 {
+    @include font-size(12);
+    line-height: 1.2;
+}
+
+
+@mixin font-size-d2 {
+    @include font-size(9);
+    line-height: 1.2;
+}
+
+/*------------------------------------*\
+    LAYOUT
+\*------------------------------------*/
+$max-width: 1440px;

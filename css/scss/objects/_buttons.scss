@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+    @include inline-block;
+    background: $color-1;
+    color: $color-2;
+    line-height: 1;
+    font-weight: bold;
+    padding: $pad $pad-double;
+    border: 0;
+    text-align: center;
+    width: auto;
+    @include transition(all, 0.3s, ease-out);
+
+    &:hover, &:focus, &:active {
+        background: $color-2;
+        color: $color-1;
+        @include transition(all, 0.8s, ease-out);
+    }
+
+    &.disabled {
+        background: $gray-light-2;
+        color: $gray;
+    }
+}
+
+.btn-neg {
+    background: $color-2;
+    color: $color-1;
+    &:hover, &:focus, &:active {
+        background: $color-1;
+        color: $color-2;
+    }
+}
+
+.btn-alt {
+    &, &:hover, &:focus {
+        background: transparent;
+    }
+}
+
+.btn-small {
+    padding: $pad-half;
+}
+
+.btn-large {
+    padding: $pad-half;
+    text-transform: uppercase;
+    background: $gray;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+
+.text-btn {
+    font-style: italic;
+}
+
+.avantgarde {
+    .btn {
+        
+        background: transparent;
+        border: 2px solid $color-2;
+        color: $color-2;
+         &:hover, &:focus, &:active {
+            background: $color-2;
+            color: $color-1;
+        }
+    }
+    
+       
+}

@@ -1,0 +1,9 @@
+.grid{
+    font-size: 0;
+}
+
+.grid__item{
+    @extend .body;
+    zoom: 1;
+    *display: inline;
+}

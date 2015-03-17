@@ -1,0 +1,140 @@
+/* ==========================================================================
+$GLOBAL CLASSES
+
+USAGE: 
+You can use the classes by itself for quick prototyping but if the project
+has to be adjustable you might want to extend these instead  
+
+========================================================================== */
+
+
+
+/* CLEARFIX
+USAGE:
+use this class for the container of floating contents
+========================================================================== */
+.cf {
+    *zoom: 1;
+}
+.cf:before, .cf:after {
+content: " "; /* 1 */
+display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* Completely remove from the flow and screen readers.
+USAGE: why hide it, if you could just remove it from html? 
+========================================================================== */
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Completely remove from the flow but leave available to screen readers.
+========================================================================== */
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* FLOATS
+========================================================================== */
+.right {
+    float: right;
+    padding: 0 0 $pad $pad;
+}
+
+.left {
+    float: left;
+    padding: 0 $pad $pad 0;
+}
+
+.none {
+    float: none;
+}
+
+/* TEXT ALIGN
+========================================================================== */
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+/* DISPLAY CLASSES - very usefull with the grid system
+========================================================================== */
+.hide-small {
+    @media all and (max-width: $bp-med) {
+        display: none;
+    }
+}
+
+.hide-med {
+    @media all and (min-width: $bp-med) and (max-width: $bp-large) {
+        display: none;
+    }
+}
+
+.hide-large {
+    @media all and (min-width: $bp-large) {
+        display: none;
+    }
+}
+
+/* STATES, useful in combination with js validators, set colors in Settings
+========================================================================== */
+.valid {
+    color: $valid;
+}
+
+.error {
+    color: $error;
+}
+
+.warning {
+    color: $warning;
+}
+
+.information {
+    color: $information;
+}
+
+/* SECOND FONT, don't actually use this
+========================================================================== */
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+/* COVER
+put backgroundimages as style in html to work with content management system
+========================================================================== */
+.cover {
+    @include background-size(cover);
+    background-repeat: none;
+    background-position: center center;
+}
+
+/* STRETCH CONTENT
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+========================================================================== */
+.stretch {
+    @include stretch;
+}

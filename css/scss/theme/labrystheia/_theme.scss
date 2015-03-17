@@ -1,0 +1,36 @@
+/*SECTIONS
+   ========================================================================== */
+.labrystheia {
+    .section__content {
+        @extend .lc;
+    }
+    
+    .section--bgcolor {
+        background-color: $color-3;
+        padding: $pad-quadruple 0;
+        &, a {
+            color: $color-2;
+        }
+        
+        @media all and (max-width: $lap) {
+            padding: $pad 0;
+        }
+    }
+}
+
+
+/*FOOTER
+   ========================================================================== */
+
+.labrystheia {
+    .footer-content {
+        @extend .lc;
+    }
+}
+
+
+/* BLOCK LABRYSTHEIA THEME
+   ========================================================================== */
+.labrystheia .block__title {
+    font-weight: bold;
+}

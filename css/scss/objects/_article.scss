@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    $ARTICLE
+\*------------------------------------*/
+.article {
+    position: relative; 
+}
+
+.article__title {
+    margin: $pad-half 0;
+    @extend .gamma;
+}
+
+.article__subtitle {
+    margin: $pad-half 0;
+    @extend .delta;
+}
+
+.article__header {
+    margin: $pad auto;
+    .article__title {
+
+    }
+
+    .article__subtitle {
+
+    }
+}
+
+.article__link {
+    margin: $pad 0;
+    @extend .btn;
+}
+
+
+
+/*------------------------------------*\
+    $ARTICLE MAIN
+\*------------------------------------*/
+.article--main {
+    @include min-height(650px);
+    text-align: center;
+    padding: $pad-quadruple;
+    margin-bottom: $space-double;
+    
+    color: $color-2;
+    @include text-shadow(rgba($color-1, 0.3) 0px 0px 6px);
+    
+    .article__overlay {
+        background-color: rgba($color-1, 0.3);
+    }
+    
+    .article-content {
+        position: relative;
+    }
+}
+
+
+/* ARTICLE MAIN THEMED
+   ========================================================================== */
+.avantgarde {
+    .article--main {
+        height: 100vh;
+        color: $color-2;
+    }
+}
+
+.moesi .article--main {
+
+}
+
+

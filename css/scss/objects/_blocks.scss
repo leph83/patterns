@@ -1,0 +1,246 @@
+/* ==========================================================================
+  BLOCK GENERAL
+   ========================================================================== */
+.block {
+    margin: $space-double 0;
+    position: relative;
+}
+
+.block__image img {
+    vertical-align: bottom;
+}
+
+.block__overlay {
+    @extend .stretch;
+    background-color: rgba($color-1, 0.3);
+}
+
+.block__link {
+    display: block;
+    position: relative;
+}
+
+.block__title {
+}
+
+.block__subtitle {
+}
+
+
+
+/* ==========================================================================
+  BLOCK DEFAULT
+   ========================================================================== */
+.block--default {
+    .block__header {
+    }
+    
+    .block__title {
+        @extend .delta;
+    }
+
+    .block__subtitle {
+        @extend .epsilon;
+    }
+    
+    .block__image {
+        margin-bottom: $pad;
+    }
+}
+
+/* ==========================================================================
+  BLOCK ROUNDED
+   ========================================================================== */
+.block--rounded {
+    .block__image img{
+        @include border-radius(100%);
+    }
+}
+
+
+/* ==========================================================================
+  BLOCK BOTTOM
+   ========================================================================== */
+.block--bottom {}
+
+/* ==========================================================================
+  BLOCK title subtitle
+   ========================================================================== */
+.block--title-subtitle {
+    
+    margin: 0;
+    @include min-height(650px);
+    text-align: center;
+    padding: $pad-quadruple 0;
+    color: $color-2;
+    @include text-shadow(rgba($color-1, 0.3) 0px 0px 6px);
+
+    /*vertical align middle*/
+    @extend .vmiddle-wrapper;
+
+    &:before {
+        @extend .vmiddle-before;
+    }
+
+    .block__link {
+        @extend .vmiddle;
+    }
+
+    .block__title {
+        @extend .alpha; 
+        color: $color-2;
+    }
+
+    .block__subtitle {
+        @extend .gamma;
+        color: $color-2;
+    }
+}
+
+
+/* ==========================================================================
+  BLOCK FEATURE
+   ========================================================================== */
+.block--feature {
+    .block__title {
+        margin-bottom: $pad;
+        font-weight: bold;
+    }
+}
+
+/* ==========================================================================
+  BLOCK TEAM
+   ========================================================================== */
+.block--team {
+    .block__title {
+        font-weight: bold;
+        margin: $space-half 0;
+    }
+
+    .block__image img{
+        @include border-radius(100%);
+    }
+}
+
+/* BLOCK TEAM THEMED
+   ========================================================================== */
+.labrystheia .block--team{
+    .block__image img {
+        @include border-radius(100%);
+    }
+}
+
+/* BLOCK NEWS
+   ========================================================================== */
+.block--news {
+    
+}
+
+
+
+/* ==========================================================================
+  BLOCK GALLERIES
+   ========================================================================== */
+
+/* BLOCK TILE INSET
+   ========================================================================== */
+.block--tile-inset {
+    position: relative;
+
+    .block__link {
+        @extend .vmiddle-wrapper;
+        @extend .cover;
+        @include min-height(250px);
+        display: block;
+        background-size: 110%;
+        text-align: center;
+    }
+
+    .block__overlay {
+        @extend .stretch;
+        background-color: rgba($color-1, 0.5);
+    }
+
+    .block__title {
+        color: $color-2;
+        @extend .vmiddle;
+        position: relative;
+    }
+}
+
+.no-touch .block--tile-inset {
+    .block__overlay {
+        background-color: rgba($color-1, 0);
+    }
+
+    .block__title {
+        opacity: 0;
+        @include transition(all, 0.3s, ease-out);
+    }
+
+    .block__link {
+        background-size: 100%;
+        @include transition(all, 0.3s, ease-out);
+
+        &:hover, &:active, &:focus {
+            background-size: 110%;
+            @include transition(all, 0.3s, ease-out);
+
+            .block__overlay {
+                background-color: rgba($color-1, 0.5);
+                @include transition(all, 0.3s, ease-out);
+            }
+
+            .block__title {
+                opacity: 1;
+                @include transition(all, 0.3s, ease-out);
+            }
+        }
+    }
+}
+
+/* BLOCK TILE INSET BOTTOM
+   ========================================================================== */
+.block--tile-inset-bottom {
+    .block__link {
+        display: block;
+    }
+    
+    .block__image {
+        position: relative;
+    }
+    
+    .block__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba($color-1, 0.8);
+        padding: $pad $pad-double;
+    }
+}
+
+
+/* BLOCK GALLERY FULL
+   ========================================================================== */
+.block--galleryfull {
+    margin: 0;
+    .block__link {
+        position: relative;
+        &:hover {
+            .block__title {
+                display: block;
+            }
+        }
+    }
+
+    .block__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+        bottom: 0;
+    }
+}

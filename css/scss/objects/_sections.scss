@@ -1,0 +1,339 @@
+/*------------------------------------*\
+    $SECTION GLOBAL SETTINGS
+\*------------------------------------*/
+.section {
+    position: relative;
+    padding-top: $space-double;
+    padding-bottom: $space-double;
+}
+
+.section__overlay {
+    background-color: rgba($color-1, 0.3);
+}
+
+.section__content {
+    position: relative;
+}
+
+.section__header {
+    margin: $space-half 0;
+}
+
+.section__title {
+    @extend .gamma;
+    word-wrap: break-word;
+}
+
+.section__subtitle {
+    @extend .delta;
+    word-wrap: break-word;
+}
+
+.section__button {
+    @extend .btn;
+}
+
+/*------------------------------------*\
+    $SECTION FULL
+\*------------------------------------*/
+.section--full {
+    .section__content {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+} 
+
+/*------------------------------------*\
+    $SECTION TITLE SUBTITLE
+\*------------------------------------*/
+.section--title-subtitle {
+    @include min-height(650px);
+    text-align: center;
+    padding: $pad-quadruple 0;
+    color: $color-2;
+    @include text-shadow(rgba($color-1, 0.3) 0px 0px 6px);
+
+    /*vertical align middle*/
+    @extend .vmiddle-wrapper;
+
+    &::before {
+        @extend .vmiddle-before;
+    }
+
+    .section__content {
+        @extend .vmiddle;
+    }
+}
+
+/*------------------------------------*\
+    $SECTION BG FIXED
+\*------------------------------------*/
+.section--bgfixed {
+    background-attachment: fixed;
+    @include min-height(100vh);
+}
+
+/*------------------------------------*\
+    $SECTION SLIDES
+\*------------------------------------*/
+.section--slides {
+    padding: 0 !important;
+    .section__content {
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        
+    }
+}
+
+/*------------------------------------*\
+    $SECTION CAPTION TITLE
+\*------------------------------------*/
+.section--caption-title {
+    @include min-height(190px);
+    text-align: center;
+    padding: $pad-double 0;
+    color: $color-2;
+    @include text-shadow(rgba($color-1, 0.3) 0px 0px 6px);
+
+    /*vertical align middle*/
+    @extend .vmiddle-wrapper;
+
+    &::before {
+        @extend .vmiddle-before;
+    }
+
+    .section__overlay {
+        background-color: rgba($color-1, 0.5);
+    }
+
+    .section__content {
+        @extend .vmiddle;
+        padding-top: $pad;
+        padding-bottom: $pad;
+    }
+    
+    .section__title {
+        margin: $pad 0;
+    }
+    
+    .section__subtitle {
+        margin: $pad 0;
+    }
+    
+    .section__button__container {
+        margin: $pad-quadruple 0;
+        
+    }
+}
+
+
+/*------------------------------------*\
+    $SECTION BG COLOR
+\*------------------------------------*/
+
+/* DEFAULT THEME
+   ========================================================================== */
+.default .section--bgcolor {
+    background-color: $color-3;
+}
+
+/*------------------------------------*\
+    $SECTION GALLERY
+\*------------------------------------*/
+.section--title-subtitle {
+    .section__title {
+        @extend .alpha;
+        text-align: center;
+    }
+
+    .section__subtitle {
+        @extend .gamma;
+        text-align: center;
+    }
+}
+
+/*------------------------------------*\
+    $SECTION FEATURES
+\*------------------------------------*/
+.section--features {
+    
+}
+
+
+
+/* SECTION TEAM
+   ========================================================================== */
+.section-1 {
+    background-color: $color-3;
+}
+
+.section-2 { 
+    background-image: url(https://placekitten.com/g/1980/1080);
+}
+
+.section-3 {
+    background-color: $color-4;
+    
+}
+ 
+.section-4 {
+    background-image: url(https://placekitten.com/g/1900/1080);
+}
+
+.section-5 {
+    background-color: $color-6;
+}
+
+
+/*------------------------------------*\
+    $FULL VIEWPORT SECTION
+\*------------------------------------*/
+
+.section--fullviewport {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+}
+
+
+/*------------------------------------*\
+    $florida
+\*------------------------------------*/
+.alabama {
+    height: 100vh;
+    padding-bottom: 160px;
+    position: relative;
+    color: $color-2;
+    border-bottom: 1px inset $color-9;
+}
+
+.alabama__image {
+    text-align: center;
+
+    img {
+        width: 30%;
+    }
+}
+
+.alabama__title {
+    text-align: center;
+}
+
+.alabama__content {
+    text-align: center;
+    margin: 1.5em 0px 0px;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.alabama__link {
+    position: absolute;
+    bottom: 0;
+    height: 160px;
+    background: rgba($color-2, 0.95);
+    text-align: center;
+    width: 100%;
+}
+
+/*------------------------------------*\
+    $alaska
+\*------------------------------------*/
+.alaska--bg {
+    @extend .alabama;
+    background: rgba($color-2, 0.95);
+    color: $color-8;
+}
+
+.alaska__title {
+    @extend .alabama__title;
+}
+
+.alaska__content {
+    @extend .alabama__content;
+}
+
+.alaska__link {
+    @extend .alabama__link;
+    background: none;
+
+    .btn {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: $color-8;
+    }
+}
+
+
+/*------------------------------------*\
+    $arizona
+\*------------------------------------*/
+.arizona--bg {
+    @extend .alabama;
+    background: rgba($color-2, 0.95);
+    color: $color-8;
+    height: auto;
+    padding: 100px 0;
+}
+
+.arizona__title {
+    @extend .alabama__title;
+}
+
+.arizona__content {
+    @extend .alabama__content;
+}
+
+.arizona__link {
+    @extend .alabama__link;
+    background: none;
+}
+
+
+.theme--highlight {
+    position: relative;
+}
+
+.theme--highlight .footer {
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    min-height: auto;
+    width: 100%;
+    left: 0;
+}
+
+
+.icons {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+
+    li {
+        margin: 0 20px;
+        font-size: 20px;
+        @include inline-block(middle);
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .label {
+        display: none;
+    }
+}
+
+.copyright {
+    float: none;
+    text-align: center;
+    margin: 20px 0;
+
+    li {
+        @include inline-block;
+        margin: 0 20px;
+    }
+}

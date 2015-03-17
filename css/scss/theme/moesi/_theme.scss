@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    MÖSI
+\*------------------------------------*/
+
+/*HEADER
+   ========================================================================== */
+.moesi {
+    .header {
+        position: absolute;
+        z-index: 100;
+        background-color: rgba($color-2, 0.75);
+        border-bottom: 1px solid rgba($color-2, 0.95);
+    }
+}
+
+/*FOOTER
+   ========================================================================== */
+.moesi {
+    .footer-content {
+        @extend .lc;
+    }
+}
+
+/*SECTIONS
+   ========================================================================== */
+.moesi {
+    .section__content {
+        @extend .lc;
+    }
+    
+    .section-slides {
+    }
+}
+
+/* BLOCKS
+   ========================================================================== */
+.moesi {
+    .block__title {
+        margin-bottom: $pad-half;
+        font-weight: bold;
+    }
+    
+    .block__more {
+        @extend .btn;
+    }
+}
+

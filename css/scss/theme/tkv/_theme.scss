@@ -1,0 +1,51 @@
+/*SECTIONS
+   ========================================================================== */
+.tkv {
+    .section__content {
+        @extend .lc;
+    }
+    
+    .section--title-subtitle {
+        @include min-height(100vh);
+    }
+    
+    .section--bgcolor {
+        background-color: $color-3;
+        padding: $pad-quadruple 0;
+        &, a {
+            color: $color-2;
+        }
+        
+        @media all and (max-width: $lap) {
+            padding: $pad 0;
+        }
+    }
+    
+    .section--bgfixed {
+    background-attachment: fixed;
+        @include min-height(75vh);
+    }
+}
+
+/*HEADER
+   ========================================================================== */
+.tkv {
+    .header {
+        position: absolute;
+        z-index: 100;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+}
+
+
+/*FOOTER
+   ========================================================================== */
+
+.tkv {
+    .footer-content {
+        @extend .lc;
+    }
+}

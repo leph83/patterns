@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+
+ul {
+    list-style: disc;
+    margin: 0 0 $space 1.2em;
+
+    ul {
+        margin-bottom: 0;
+    }
+}
+
+ol {
+    list-style: decimal;
+    margin: 0 0 $space 1.5em;
+
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+
+/*------------------------------------*\
+    $DEFINITION LISTS
+\*------------------------------------*/
+dl {
+    margin: 0 0 $space;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
