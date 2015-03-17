@@ -1,6 +1,6 @@
 .DS_Store
 public/*
-source/_patterns/04-pages
+source/_patterns/100-themes
 config.ini
 latest-change.txt
 *-ck.js
